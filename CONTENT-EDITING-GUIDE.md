@@ -51,3 +51,28 @@ This is a static website package, not a full content-management system. If you w
 3. On one of the `<button class="participant-card" ...>` lines, change `src="reel-1.svg"` to `src="participant-jane.jpg"` and the `data-comment="..."` text to their approved message. Update the `alt` text to the participant's first name.
 4. The list appears twice so the banner loops smoothly. Make the same change in the matching line in the second half.
 5. Save, then refresh the page in your browser to check.
+
+## Draft 21: where things live now
+| To change… | Edit this file |
+|---|---|
+| Landing page (hero, program boxes, Get Involved, Let's Connect) | `index.html` |
+| Who We Are text, beetle/butterfly meanings, client scrolling bar | `about.html` |
+| Full Experience details | `experience.html` |
+| New Manager Professional Development details | `professional-development.html` |
+| Career Coaching details | `career-coaching.html` |
+| Books, links, clips, reflection tools, orientation link | `resources.html` |
+| Passcode screen | `gate.js` |
+
+### Program boxes
+Each box on the landing page is just a title, one paragraph, and an "Explore…" link. Keep the paragraph short; put everything else on that program's own page.
+
+### Client scrolling bar (about.html)
+Each client is one `<button class="participant-card client-card" ...>` line. To add a client, save a square photo (about 400×400) in this folder, copy an existing line, then change the photo file name and the `data-comment` text. The list is written twice so the loop is seamless, so add the new line to both halves.
+
+### Adding a video or reel
+Upload the clip to YouTube (Unlisted is fine) or Instagram and copy the link. In `index.html`, replace the two `href="#classroom-clip"` links in the Classroom Clip box with that link, and add `target="_blank" rel="noopener"` so it opens in a new tab. On `resources.html`, add clips as list items under "Clips & Reels".
+
+### Passcode (gate.js)
+- Change the code: edit `var PASSCODE = 'B&B';`
+- Launch the site publicly: delete the `<script src="gate.js"></script>` tag from every page, and delete `robots.txt` (or change it to allow indexing).
+- The passcode only keeps casual visitors out. Never put private participant information on the website itself. Collect it through Google Forms, where responses are visible only to the form owner.

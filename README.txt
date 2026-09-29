@@ -37,3 +37,12 @@ DRAFT 20 NOTES (client email of 9/24/26)
 - Program cards and Get Involved cards share the same dark purple top outline.
 - Get Involved: the Resources placeholder was replaced with a photo (get-involved-group.jpg).
 - Footer: Registration Form / Code of Conduct links removed (they remain in the Our Programs purple box).
+
+DRAFT 21 NOTES (9/29/26)
+- PRIVATE PREVIEW: every page now asks for the passcode "B&B" before showing the site (gate.js). Search engines are told not to index it (robots.txt + noindex tags).
+  This only keeps casual visitors out; it is not real security. To change or remove the passcode, see gate.js.
+- Who We Are moved to its own page (about.html): beetle & butterfly on the flower with both meanings, the client scrolling bar (2 real clients + feedback), and quick links to the rest of the site. The landing page keeps a short Who We Are teaser that links there.
+- Our Programs boxes now show only the paragraph + link. Each link opens its own page: experience.html, professional-development.html, career-coaching.html.
+- The Experience section on the landing page is shortened; the full details are on experience.html.
+- Get Involved keeps Community Service + Classroom Clip. Resources moved to resources.html (books, links, clips, reflection tools, orientation video link).
+- Forms (Cohort application, Registration, Code of Conduct, Self-Assessment) open in a new tab.

@@ -6,40 +6,31 @@ function submitForm(event){
   return false;
 }
 
-document.querySelector('.menu-toggle').addEventListener('click',()=>{
-  const nav=document.querySelector('nav');
-  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-  nav.style.flexDirection='column';
-  nav.style.position='absolute';
-  nav.style.top='74px';
-  nav.style.right='5%';
-  nav.style.background='#f7f0e4';
-  nav.style.padding='20px';
-  nav.style.borderRadius='16px';
-  nav.style.boxShadow='0 12px 35px rgba(43,23,69,.18)';
-});
+const menuToggle=document.querySelector('.menu-toggle');
+if(menuToggle){
+  menuToggle.addEventListener('click',()=>{
+    const nav=document.querySelector('.site-header nav');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    nav.style.flexDirection='column';
+    nav.style.position='absolute';
+    nav.style.top='74px';
+    nav.style.right='5%';
+    nav.style.background='#f7f0e4';
+    nav.style.padding='20px';
+    nav.style.borderRadius='16px';
+    nav.style.boxShadow='0 12px 35px rgba(43,23,69,.18)';
+  });
+}
 
+const modal=document.getElementById('participant-modal');
+function closeModal(){ if(modal){modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');} }
 document.querySelectorAll('.participant-card').forEach(card=>{
   card.addEventListener('click',()=>{
-    const modal=document.getElementById('participant-modal');
-    const comment=document.getElementById('participant-comment');
-    comment.textContent=card.dataset.comment || 'Participant reflection coming soon.';
+    if(!modal) return;
+    document.getElementById('participant-comment').textContent=card.dataset.comment || 'Reflection coming soon.';
     modal.classList.add('is-open');
     modal.setAttribute('aria-hidden','false');
   });
 });
-
-document.querySelectorAll('[data-close-modal]').forEach(el=>{
-  el.addEventListener('click',()=>{
-    const modal=document.getElementById('participant-modal');
-    modal.classList.remove('is-open');
-    modal.setAttribute('aria-hidden','true');
-  });
-});
-
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){
-    const modal=document.getElementById('participant-modal');
-    if(modal){modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');}
-  }
-});
+document.querySelectorAll('[data-close-modal]').forEach(el=>el.addEventListener('click',closeModal));
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
