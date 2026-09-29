@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 46" role="img" aria-label="Beetle and butterfly">
+<g transform="translate(2 8)" stroke="#17131d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ <ellipse cx="22" cy="17" rx="13" ry="9" fill="#6b3fa0"/><ellipse cx="34" cy="17" rx="8" ry="7" fill="#8d63b6"/><path d="M25 9 Q31 3 37 8 M17 25 L11 32 M23 26 L20 35 M31 26 L34 34 M39 23 L46 29" fill="none"/><path d="M39 12 L47 6 M38 20 L47 24" fill="none"/>
+ <g transform="translate(58 0)"><path d="M24 17 C5 2 3 10 8 21 C12 29 20 27 24 20 C28 27 36 29 40 21 C45 10 42 2 24 17Z" fill="#a77ac9"/><path d="M24 17 C13 6 9 8 10 14 C11 20 17 22 24 18 C31 22 37 20 38 14 C39 8 35 6 24 17Z" fill="#d8b66e"/><path d="M24 17 L24 30" fill="none"/></g>
+</g></svg>

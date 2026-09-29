@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Students learning with a professor</title>
+  <desc id="desc">A diverse professor leads a small classroom discussion with three young adult students.</desc>
+  <defs>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe6f5" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#f7f0e4" stop-opacity=".18"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="375" cy="500" rx="295" ry="34" fill="#2b1745" opacity=".10"/>
+  <circle cx="535" cy="128" r="118" fill="url(#soft)"/>
+  <path d="M438 120h190v126H438z" fill="#fff" opacity=".8" stroke="#cbbfd3" stroke-width="3"/>
+  <path d="M456 144h155M456 169h125M456 194h143" stroke="#d9b979" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+  <path d="M448 222h171" stroke="#6b3fa0" stroke-width="8" stroke-linecap="round" opacity=".25"/>
+
+  <!-- professor -->
+  <g transform="translate(80 45)">
+    <circle cx="210" cy="76" r="38" fill="#7a4a32"/>
+    <path d="M177 72c4-35 69-45 77 5-17-15-41-22-77-5z" fill="#2b1745"/>
+    <path d="M169 164c6-48 78-58 94 0l14 111H155z" fill="#6b3fa0"/>
+    <path d="M189 124l22 40 22-40" fill="#f7f0e4"/>
+    <path d="M180 274l-18 118M257 274l18 118" stroke="#2b1745" stroke-width="23" stroke-linecap="round"/>
+    <path d="M159 390h34M264 390h34" stroke="#2b1745" stroke-width="13" stroke-linecap="round"/>
+    <path d="M151 178l-46 67M287 178l52 40" stroke="#7a4a32" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="339" cy="218" r="5" fill="#7a4a32"/>
+    <path d="M338 218l-1-55" stroke="#2b1745" stroke-width="4"/>
+    <path d="M337 163h35" stroke="#2b1745" stroke-width="4"/>
+  </g>
+
+  <!-- student 1 -->
+  <g transform="translate(285 205)">
+    <circle cx="92" cy="56" r="31" fill="#c78962"/>
+    <path d="M64 55c4-36 56-43 64-5-16-10-34-12-64 5z" fill="#17131b"/>
+    <path d="M51 125c8-42 72-48 85 0l10 96H42z" fill="#2b1745"/>
+    <path d="M72 220l-8 82M118 220l9 82" stroke="#1d1a20" stroke-width="17" stroke-linecap="round"/>
+    <path d="M58 302h29M113 302h29" stroke="#1d1a20" stroke-width="10" stroke-linecap="round"/>
+    <path d="M48 140l-39 48M137 140l35 31" stroke="#c78962" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- student 2 -->
+  <g transform="translate(438 275)">
+    <circle cx="82" cy="51" r="29" fill="#8f5d45"/>
+    <path d="M53 47c4-34 56-40 62 1-19-8-40-8-62-1z" fill="#4a2b21"/>
+    <path d="M43 117c10-37 65-44 79 0l10 101H33z" fill="#d9b979"/>
+    <path d="M62 218l-8 70M104 218l9 70" stroke="#2b1745" stroke-width="16" stroke-linecap="round"/>
+    <path d="M50 288h28M105 288h28" stroke="#2b1745" stroke-width="10" stroke-linecap="round"/>
+    <path d="M43 132l-42 44M123 132l38 36" stroke="#8f5d45" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <!-- student 3 -->
+  <g transform="translate(178 300)">
+    <circle cx="86" cy="51" r="30" fill="#a96f4f"/>
+    <path d="M55 49c-2-33 58-50 69-5-16-10-42-13-69 5z" fill="#3a201c"/>
+    <path d="M47 120c8-38 72-45 83 0l11 95H35z" fill="#b7a1c7"/>
+    <path d="M65 215l-8 72M110 215l9 72" stroke="#2b1745" stroke-width="16" stroke-linecap="round"/>
+    <path d="M53 287h29M106 287h29" stroke="#2b1745" stroke-width="10" stroke-linecap="round"/>
+    <path d="M45 135l-43 34M129 135l37 32" stroke="#a96f4f" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <!-- tables and learning materials -->
+  <path d="M122 465h478" stroke="#2b1745" stroke-width="12" stroke-linecap="round" opacity=".9"/>
+  <path d="M165 465l-17 42M555 465l17 42" stroke="#2b1745" stroke-width="10" stroke-linecap="round"/>
+  <rect x="287" y="431" width="92" height="20" rx="7" fill="#fff" stroke="#cbbfd3" stroke-width="3"/>
+  <path d="M303 440h60" stroke="#6b3fa0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="403" cy="440" r="7" fill="#d9b979"/>
+  <path d="M110 92c-19 13-27 31-25 51M126 81c-16 5-31 17-38 32" fill="none" stroke="#6b3fa0" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+</svg>

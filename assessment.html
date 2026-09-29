@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Beetles & Butterflies Self-Assessment</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.assessment-page{min-height:100vh;background:var(--cream);padding:70px 0}.assessment-card{max-width:850px;margin:auto;background:#fff;border-radius:28px;padding:45px;box-shadow:var(--shadow)}
+.assessment-card h1{font-size:clamp(38px,5vw,58px);color:var(--deep);margin-bottom:15px}.assessment-intro{color:var(--muted);font-size:17px;max-width:720px}
+.question{padding:24px 0;border-top:1px solid var(--line)}.question legend{font-weight:700;font-size:18px;margin-bottom:12px}.options{display:grid;gap:9px}.options label{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #e2dbe7;border-radius:12px;cursor:pointer}.options label:hover{border-color:var(--purple);background:#fbf8fd}
+.score-result{display:none;margin-top:30px;padding:25px;border-radius:18px;background:#f0e8f5;border-left:4px solid var(--purple)}.score-result h2{font-size:30px;color:var(--deep);margin-bottom:8px}.back-link{display:inline-block;margin-top:25px;color:var(--purple);font-weight:700;text-decoration:none}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">B&B</span><span>Beetles & Butterflies</span></a><a class="nav-button" href="index.html#home">Back to Website</a></div></header>
+<main class="assessment-page"><div class="container"><div class="assessment-card">
+<p class="eyebrow">THE BEETLES & BUTTERFLIES SELF-ASSESSMENT</p>
+<h1>How Ready Are You to Lead?</h1>
+<p class="assessment-intro">This 15-question reflection is designed to help you assess your current leadership readiness across self-awareness, confidence, accountability, communication, decision-making, resilience, and influence. Choose the response that best describes you today. There are no right or wrong answers.</p>
+<form id="assessmentForm"></form>
+<div id="result" class="score-result"></div>
+<a class="back-link" href="index.html#home">← Return to Beetles & Butterflies</a>
+</div></div></main>
+<script>
+const questions=[
+"I understand my strengths, values, and areas I need to develop.",
+"I am comfortable taking responsibility for my choices and outcomes.",
+"I can move forward even when I do not have complete certainty.",
+"I communicate my ideas clearly while listening to other perspectives.",
+"I can receive constructive feedback without becoming defensive.",
+"I manage my emotions effectively when situations become difficult.",
+"I can make thoughtful decisions and explain the reasoning behind them.",
+"I follow through on commitments, even when motivation is low.",
+"I can handle conflict respectfully and work toward productive solutions.",
+"I build trust by being dependable, honest, and consistent.",
+"I can influence others without needing to have formal authority.",
+"I recognize when I need help and know how to seek it.",
+"I adapt when circumstances, expectations, or plans change.",
+"I actively look for opportunities to learn, grow, and improve.",
+"I am prepared to use my strengths and skills to create positive impact in my workplace, community, or relationships."
+];
+const scale=["Not yet","Sometimes","Often","Consistently"];
+const form=document.getElementById('assessmentForm');
+questions.forEach((q,i)=>{const field=document.createElement('fieldset');field.className='question';field.innerHTML='<legend>'+(i+1)+'. '+q+'</legend><div class="options">'+scale.map((s,v)=>'<label><input type="radio" name="q'+i+'" value="'+v+'" required> '+s+'</label>').join('')+'</div>';form.appendChild(field)});
+const btn=document.createElement('button');btn.type='submit';btn.className='button primary';btn.textContent='See My Leadership Readiness';form.appendChild(btn);
+form.addEventListener('submit',e=>{e.preventDefault();let score=0;questions.forEach((_,i)=>score+=Number(form.querySelector('input[name=q'+i+']:checked').value));let title,text;if(score<=20){title='You are in the Discovery stage.';text='Your opportunity is to build self-awareness, confidence, consistency, and foundational leadership habits. Start with knowing yourself and strengthening the areas that will support your next step.'}else if(score<=40){title='You are building your leadership foundation.';text='You have meaningful strengths to build on. Focus on turning awareness into consistent action, strengthening communication, decision-making, and resilience.'}else if(score<=50){title='You are approaching leadership readiness.';text='You demonstrate many behaviors associated with effective leadership. Continue developing your influence, emotional intelligence, adaptability, and ability to create impact.'}else{title='You are demonstrating strong leadership readiness.';text='You show a strong foundation for leading yourself and others. Your next opportunity is to deepen your influence, sharpen your strategic thinking, and use your leadership to create meaningful impact.'}const r=document.getElementById('result');r.innerHTML='<h2>'+title+'</h2><p><strong>Your score: '+score+' / 45</strong></p><p>'+text+'</p>';r.style.display='block';r.scrollIntoView({behavior:'smooth',block:'center'})});
+</script>
+</body></html>
