@@ -28,3 +28,12 @@ DRAFT 18 NOTES
 - The Cohort Pilot application link is the Google Form supplied in the flyer.
 - See CONTENT-EDITING-GUIDE.md for editing participant photos/comments, program content, and form-security setup.
 - Registration/contact forms are design templates until a secure form backend is connected.
+
+DRAFT 20 NOTES (client email of 9/24/26)
+- Top banner now uses the same lavender (#eee8f2) as the Our Programs section.
+- Hero: animated classroom illustration replaced with a real photo (hero-leadership-discussion.jpg); the three "Discover / Develop / Create" lines sit under it.
+- Who We Are: all-purple section; the two paragraphs are black text on a cream panel; beetle & butterfly art replaced with the photographic image from the Cohort flyer (who-beetle-butterfly.jpg).
+- Participant scrolling banner is now its own section directly under Who We Are, on the lavender background.
+- Program cards and Get Involved cards share the same dark purple top outline.
+- Get Involved: the Resources placeholder was replaced with a photo (get-involved-group.jpg).
+- Footer: Registration Form / Code of Conduct links removed (they remain in the Our Programs purple box).

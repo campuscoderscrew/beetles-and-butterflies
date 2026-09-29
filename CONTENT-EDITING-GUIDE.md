@@ -44,3 +44,10 @@ The current Cohort Pilot application link points to the Google Form supplied for
 
 ## Important
 This is a static website package, not a full content-management system. If you want to edit photos, testimonials, programs, forms, and text yourself without editing HTML, ask the website developer to move the site into a CMS such as WordPress, Wix, Squarespace, Webflow, or another platform with an editor you control.
+
+## Adding participant photos to the scrolling banner (step by step)
+1. Save the photo in this same folder, e.g. `participant-jane.jpg`. A landscape crop about 400×230 px works best.
+2. In `index.html`, find the `#journey` section (search for `participant-card`).
+3. On one of the `<button class="participant-card" ...>` lines, change `src="reel-1.svg"` to `src="participant-jane.jpg"` and the `data-comment="..."` text to their approved message. Update the `alt` text to the participant's first name.
+4. The list appears twice so the banner loops smoothly. Make the same change in the matching line in the second half.
+5. Save, then refresh the page in your browser to check.
